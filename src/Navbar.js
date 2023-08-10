@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 // import Contact from './pages/Contact';
-import Movies from './pages/Movies';
-import TvSeries from './pages/Tvseries';
 
 export default function Navbar() {
     return (
