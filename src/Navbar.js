@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 // import Home from './pages/Home';
 // import Contact from './pages/Contact';
+import './Navbar.css'
 
 export default function Navbar() {
     return (
@@ -21,9 +22,9 @@ export default function Navbar() {
                         <Link to="/movies" style={{ color: 'white', textDecoration: 'none', paddingRight: 25 }}>Movies</Link>
                     </li>
                     <li>
-                        <Link to="/tvseries" style={{ color: 'white', textDecoration: 'none', paddingRight: 25 }}>TV Series</Link>
+                        <Link to="/tvseries" style={{ color: 'white', textDecoration: 'none', paddingRight: 25 }}>TVSeries</Link>
                     </li>
-                    <li style={{ marginLeft: 1050 }}>
+                    <li className='logout'>
                         <Link to="/" style={{ textDecoration: 'none' }}>
                             <button style={{
                                 paddingLeft: 12,

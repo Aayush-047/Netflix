@@ -54,9 +54,9 @@ function Banner() {
             onClick={handleBannerClick}
         >
             <div className='banner-content'>
-                <h2>
+                <h4>
                     {movie?.name || movie?.original_name || movie?.title}
-                </h2>
+                </h4>
                 <button className='button_banner' onClick={() => handleClick(movie)}>Play ▶</button>
                 <h6 className='banner_description'>{movie?.overview}</h6>
             </div>

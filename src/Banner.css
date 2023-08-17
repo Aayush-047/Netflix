@@ -34,14 +34,13 @@
   }
   
   .banner_description {
-    max-width: 100%;
-    line-height: 1.3;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    max-height: 7rem;
-    overflow: hidden;
-  }
-  
+    max-height: 150px; /* Set the maximum height for the description */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical;
+}
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .banner {
